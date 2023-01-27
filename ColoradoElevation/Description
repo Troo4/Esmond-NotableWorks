@@ -1,0 +1,1 @@
+This projects takes from a .txt file of elevations of Colorado in feet. This information is processed systemically each altitude is given a unique gray-scale RGB value that creates a gray-scale elevation map of Colorado. Further, if you click on any point in the map it will diplay the elevation in red, as seen in the example photo.
