@@ -1,0 +1,1 @@
+This game operates like the New York Times 'Wordle' game, pulling a 5-letter word from an english dictionary file, and giving the user 6 guesses to guess it correctly.
