@@ -1,0 +1,345 @@
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+Cache Simulator Nway Detailed Test
+MAIN MEMORY
+00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 
+10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 
+CACHE:
+ SET: 0
+   Blocks:
+   0:
+    valid: 0   tag: 0   dirty: 0   timestamp: 0
+    00 00 00 00 
+   1:
+    valid: 0   tag: 0   dirty: 0   timestamp: 0
+    00 00 00 00 
+ SET: 1
+   Blocks:
+   0:
+    valid: 0   tag: 0   dirty: 0   timestamp: 0
+    00 00 00 00 
+   1:
+    valid: 0   tag: 0   dirty: 0   timestamp: 0
+    00 00 00 00 
+Accesses: 0
+Hits: 0
+Misses: 0
+Writebacks: 0
+Miss Percentage: -nan
+Writeback Percentage: -nan
+-------------------------------------------------------------------
+READ 0
+0
+MAIN MEMORY
+00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 
+10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 
+CACHE:
+ SET: 0
+   Blocks:
+   0:
+    valid: 1   tag: 0   dirty: 0   timestamp: 1718053538598341287
+    00 01 02 03 
+   1:
+    valid: 0   tag: 0   dirty: 0   timestamp: 0
+    00 00 00 00 
+ SET: 1
+   Blocks:
+   0:
+    valid: 0   tag: 0   dirty: 0   timestamp: 0
+    00 00 00 00 
+   1:
+    valid: 0   tag: 0   dirty: 0   timestamp: 0
+    00 00 00 00 
+Accesses: 1
+Hits: 0
+Misses: 1
+Writebacks: 0
+Miss Percentage: 100.00
+Writeback Percentage: 0.00
+-------------------------------------------------------------------
+READ 2
+2
+MAIN MEMORY
+00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 
+10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 
+CACHE:
+ SET: 0
+   Blocks:
+   0:
+    valid: 1   tag: 0   dirty: 0   timestamp: 1718053538598577600
+    00 01 02 03 
+   1:
+    valid: 0   tag: 0   dirty: 0   timestamp: 0
+    00 00 00 00 
+ SET: 1
+   Blocks:
+   0:
+    valid: 0   tag: 0   dirty: 0   timestamp: 0
+    00 00 00 00 
+   1:
+    valid: 0   tag: 0   dirty: 0   timestamp: 0
+    00 00 00 00 
+Accesses: 2
+Hits: 1
+Misses: 1
+Writebacks: 0
+Miss Percentage: 50.00
+Writeback Percentage: 0.00
+-------------------------------------------------------------------
+READ 4
+4
+MAIN MEMORY
+00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 
+10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 
+CACHE:
+ SET: 0
+   Blocks:
+   0:
+    valid: 1   tag: 0   dirty: 0   timestamp: 1718053538598577600
+    00 01 02 03 
+   1:
+    valid: 0   tag: 0   dirty: 0   timestamp: 0
+    00 00 00 00 
+ SET: 1
+   Blocks:
+   0:
+    valid: 1   tag: 0   dirty: 0   timestamp: 1718053538598876504
+    04 05 06 07 
+   1:
+    valid: 0   tag: 0   dirty: 0   timestamp: 0
+    00 00 00 00 
+Accesses: 3
+Hits: 1
+Misses: 2
+Writebacks: 0
+Miss Percentage: 66.67
+Writeback Percentage: 0.00
+-------------------------------------------------------------------
+READ 10
+10
+MAIN MEMORY
+00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 
+10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 
+CACHE:
+ SET: 0
+   Blocks:
+   0:
+    valid: 1   tag: 0   dirty: 0   timestamp: 1718053538598577600
+    00 01 02 03 
+   1:
+    valid: 1   tag: 1   dirty: 0   timestamp: 1718053538599171896
+    08 09 0a 0b 
+ SET: 1
+   Blocks:
+   0:
+    valid: 1   tag: 0   dirty: 0   timestamp: 1718053538598876504
+    04 05 06 07 
+   1:
+    valid: 0   tag: 0   dirty: 0   timestamp: 0
+    00 00 00 00 
+Accesses: 4
+Hits: 1
+Misses: 3
+Writebacks: 0
+Miss Percentage: 75.00
+Writeback Percentage: 0.00
+-------------------------------------------------------------------
+READ 12
+12
+MAIN MEMORY
+00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 
+10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 
+CACHE:
+ SET: 0
+   Blocks:
+   0:
+    valid: 1   tag: 0   dirty: 0   timestamp: 1718053538598577600
+    00 01 02 03 
+   1:
+    valid: 1   tag: 1   dirty: 0   timestamp: 1718053538599171896
+    08 09 0a 0b 
+ SET: 1
+   Blocks:
+   0:
+    valid: 1   tag: 0   dirty: 0   timestamp: 1718053538598876504
+    04 05 06 07 
+   1:
+    valid: 1   tag: 1   dirty: 0   timestamp: 1718053538599460708
+    0c 0d 0e 0f 
+Accesses: 5
+Hits: 1
+Misses: 4
+Writebacks: 0
+Miss Percentage: 80.00
+Writeback Percentage: 0.00
+-------------------------------------------------------------------
+READ 1
+1
+MAIN MEMORY
+00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 
+10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 
+CACHE:
+ SET: 0
+   Blocks:
+   0:
+    valid: 1   tag: 0   dirty: 0   timestamp: 1718053538599753394
+    00 01 02 03 
+   1:
+    valid: 1   tag: 1   dirty: 0   timestamp: 1718053538599171896
+    08 09 0a 0b 
+ SET: 1
+   Blocks:
+   0:
+    valid: 1   tag: 0   dirty: 0   timestamp: 1718053538598876504
+    04 05 06 07 
+   1:
+    valid: 1   tag: 1   dirty: 0   timestamp: 1718053538599460708
+    0c 0d 0e 0f 
+Accesses: 6
+Hits: 2
+Misses: 4
+Writebacks: 0
+Miss Percentage: 66.67
+Writeback Percentage: 0.00
+-------------------------------------------------------------------
+READ 16
+16
+MAIN MEMORY
+00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 
+10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 
+CACHE:
+ SET: 0
+   Blocks:
+   0:
+    valid: 1   tag: 0   dirty: 0   timestamp: 1718053538599753394
+    00 01 02 03 
+   1:
+    valid: 1   tag: 2   dirty: 0   timestamp: 1718053538600048461
+    10 11 12 13 
+ SET: 1
+   Blocks:
+   0:
+    valid: 1   tag: 0   dirty: 0   timestamp: 1718053538598876504
+    04 05 06 07 
+   1:
+    valid: 1   tag: 1   dirty: 0   timestamp: 1718053538599460708
+    0c 0d 0e 0f 
+Accesses: 7
+Hits: 2
+Misses: 5
+Writebacks: 0
+Miss Percentage: 71.43
+Writeback Percentage: 0.00
+-------------------------------------------------------------------
+WRITE 6
+MAIN MEMORY
+00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 
+10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 
+CACHE:
+ SET: 0
+   Blocks:
+   0:
+    valid: 1   tag: 0   dirty: 0   timestamp: 1718053538599753394
+    00 01 02 03 
+   1:
+    valid: 1   tag: 2   dirty: 0   timestamp: 1718053538600048461
+    10 11 12 13 
+ SET: 1
+   Blocks:
+   0:
+    valid: 1   tag: 0   dirty: 1   timestamp: 1718053538600335076
+    04 05 66 07 
+   1:
+    valid: 1   tag: 1   dirty: 0   timestamp: 1718053538599460708
+    0c 0d 0e 0f 
+Accesses: 8
+Hits: 3
+Misses: 5
+Writebacks: 0
+Miss Percentage: 62.50
+Writeback Percentage: 0.00
+-------------------------------------------------------------------
+WRITE 21
+MAIN MEMORY
+00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 
+10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 
+CACHE:
+ SET: 0
+   Blocks:
+   0:
+    valid: 1   tag: 0   dirty: 0   timestamp: 1718053538599753394
+    00 01 02 03 
+   1:
+    valid: 1   tag: 2   dirty: 0   timestamp: 1718053538600048461
+    10 11 12 13 
+ SET: 1
+   Blocks:
+   0:
+    valid: 1   tag: 0   dirty: 1   timestamp: 1718053538600335076
+    04 05 66 07 
+   1:
+    valid: 1   tag: 2   dirty: 1   timestamp: 1718053538600583366
+    14 55 16 17 
+Accesses: 9
+Hits: 3
+Misses: 6
+Writebacks: 0
+Miss Percentage: 66.67
+Writeback Percentage: 0.00
+-------------------------------------------------------------------
+READ 12
+MAIN MEMORY
+00 01 02 03 04 05 66 07 08 09 0a 0b 0c 0d 0e 0f 
+10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 
+CACHE:
+ SET: 0
+   Blocks:
+   0:
+    valid: 1   tag: 0   dirty: 0   timestamp: 1718053538599753394
+    00 01 02 03 
+   1:
+    valid: 1   tag: 2   dirty: 0   timestamp: 1718053538600048461
+    10 11 12 13 
+ SET: 1
+   Blocks:
+   0:
+    valid: 1   tag: 1   dirty: 0   timestamp: 1718053538600865196
+    0c 0d 0e 0f 
+   1:
+    valid: 1   tag: 2   dirty: 1   timestamp: 1718053538600583366
+    14 55 16 17 
+Accesses: 10
+Hits: 3
+Misses: 7
+Writebacks: 1
+Miss Percentage: 70.00
+Writeback Percentage: 10.00
+-------------------------------------------------------------------
+WRITE 30
+MAIN MEMORY
+00 01 02 03 04 05 66 07 08 09 0a 0b 0c 0d 0e 0f 
+10 11 12 13 14 55 16 17 18 19 1a 1b 1c 1d 1e 1f 
+CACHE:
+ SET: 0
+   Blocks:
+   0:
+    valid: 1   tag: 0   dirty: 0   timestamp: 1718053538599753394
+    00 01 02 03 
+   1:
+    valid: 1   tag: 2   dirty: 0   timestamp: 1718053538600048461
+    10 11 12 13 
+ SET: 1
+   Blocks:
+   0:
+    valid: 1   tag: 1   dirty: 0   timestamp: 1718053538600865196
+    0c 0d 0e 0f 
+   1:
+    valid: 1   tag: 3   dirty: 1   timestamp: 1718053538601148206
+    1c 1d ee 1f 
+Accesses: 11
+Hits: 3
+Misses: 8
+Writebacks: 2
+Miss Percentage: 72.73
+Writeback Percentage: 18.18
